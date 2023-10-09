@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class hotelCollectionViewCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var heartimg: UIImageView!
-   
-    @IBOutlet weak var heartView: UIView!
     
+    
+    
+    
+    @IBOutlet weak var heartimg: UIImageView!
+    @IBOutlet weak var heartView: UIView!
     
     
     
@@ -39,5 +43,23 @@ class hotelCollectionViewCell: UICollectionViewCell {
         offsetView.layer.shadowOpacity = 0.2
         offsetView.layer.shadowRadius = 4
     }
+    
+    var hotelCellModel:hotelModel?
+    {
+        didSet
+        {
+            let url = URL(string: (hotelCellModel?.hotelimg)!)
+            if let url = url
+            {
+                
+                KingfisherManager.shared.retrieveImage(with: url  as Resource, options: nil, progressBlock: nil)
+                {
+                    (image,error,cache,imageURL) in
+                    self.img.image = image
+                    self.img.kf.indicatorType = .activity
+                }
+              }
+            }
+         }
 
 }

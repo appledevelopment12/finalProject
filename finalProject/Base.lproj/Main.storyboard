@@ -969,9 +969,17 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="heart"/>
                                                             </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carbon_play-filled" translatesAutoresizingMaskIntoConstraints="NO" id="PJi-do-nxS">
+                                                                <rect key="frame" x="104" y="70" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="TpO-Ff-7gg"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="g7m-IR-jcF"/>
+                                                                </constraints>
+                                                            </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
+                                                            <constraint firstItem="hW5-YF-MfF" firstAttribute="leading" secondItem="PJi-do-nxS" secondAttribute="trailing" constant="99" id="06U-44-wo7"/>
                                                             <constraint firstAttribute="trailing" secondItem="5YW-Im-swR" secondAttribute="trailing" id="2Tf-Zh-O8U"/>
                                                             <constraint firstItem="Xwn-NA-s5W" firstAttribute="top" secondItem="PMr-a7-unp" secondAttribute="top" constant="13" id="2no-TN-9E1"/>
                                                             <constraint firstItem="djd-w1-423" firstAttribute="leading" secondItem="tni-5H-DFN" secondAttribute="trailing" id="4uV-1R-Gnv"/>
@@ -997,6 +1005,7 @@
                                                             <constraint firstItem="5YW-Im-swR" firstAttribute="leading" secondItem="tni-5H-DFN" secondAttribute="trailing" id="hvx-pc-Qz9"/>
                                                             <constraint firstItem="fbh-D3-R10" firstAttribute="leading" secondItem="oKD-Rd-Qqw" secondAttribute="trailing" constant="14" id="lix-k4-RG9"/>
                                                             <constraint firstItem="tni-5H-DFN" firstAttribute="leading" secondItem="PMr-a7-unp" secondAttribute="leading" id="me7-l6-eU2"/>
+                                                            <constraint firstItem="PJi-do-nxS" firstAttribute="top" secondItem="Kfy-0S-FU7" secondAttribute="bottom" constant="36" id="n0V-qt-hen"/>
                                                             <constraint firstItem="Kfy-0S-FU7" firstAttribute="leading" secondItem="PMr-a7-unp" secondAttribute="leading" constant="70" id="ozF-Me-v3R"/>
                                                             <constraint firstAttribute="bottom" secondItem="fbh-D3-R10" secondAttribute="bottom" constant="30" id="qeg-7u-6Ot"/>
                                                             <constraint firstItem="914-fG-RyN" firstAttribute="leading" secondItem="PMr-a7-unp" secondAttribute="leading" constant="-125" id="t3q-F0-WKv"/>
@@ -1117,6 +1126,7 @@
         <image name="Group 1171275163" width="66" height="63"/>
         <image name="Group 1171275166" width="184" height="132"/>
         <image name="bottombar" width="334" height="54"/>
+        <image name="carbon_play-filled" width="32" height="32"/>
         <image name="comment" width="15" height="15"/>
         <image name="heart" width="18" height="18"/>
         <image name="mistry" width="219" height="129.5"/>

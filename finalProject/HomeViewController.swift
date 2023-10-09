@@ -5,11 +5,18 @@
 //  Created by Rajeev on 07/10/23.
 //
 import UIKit
-
+import Firebase
+import FirebaseDatabase
 
 class HomeViewController: UIViewController {
 
     
+    
+    var everyThingArray = [findEveryThingModel]()
+    var hotelArray = [hotelModel]()
+    
+    
+    var ref = DatabaseReference.init()
     
     @IBOutlet weak var rotationView: UIView!
     @IBOutlet weak var viewimage: UIView!
@@ -25,9 +32,9 @@ class HomeViewController: UIViewController {
     
     
     // Data store in array
-    var everyThingcollectionImageName = ["Flight","Hotel","Music","Sports","Meeting","Weather","Dating","Jobs"]
-    var everyThingCollectionimage = ["flight","hotel","music","sports","meeting","weather","dating","jobs"]
-    var hotelCollectionViewimage = ["mistry","mistry","mistry","mistry","misty","mistry","mistry"]
+   // var everyThingcollectionImageName = ["Flight","Hotel","Music","Sports","Meeting","Weather","Dating","Jobs"]
+   // var everyThingCollectionimage = ["flight","hotel","music","sports","meeting","weather","dating","jobs"]
+   // var hotelCollectionViewimage = ["mistry","mistry","mistry","mistry","misty","mistry","mistry"]
     var flightCollectionViewimage = ["indigo","vistra","indigo","vistra","indigo","vistra"]
     var flightCollectionViewimageName = ["Indigo","Vistra","Indigo","Vistra","Indigo","Vistra"]
 
@@ -73,6 +80,9 @@ class HomeViewController: UIViewController {
     {
         super.viewDidLoad()
         
+        // *** Firebase
+        self.ref = Database.database().reference()
+        
         rotationView.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         viewimage.layer.cornerRadius = 20
         totalImageView.layer.cornerRadius = 20
@@ -88,11 +98,55 @@ class HomeViewController: UIViewController {
         cornerRadius()
         delegatedatasource()
         xibregisterCell()
+        saveData()
+        saveData2()
     }
  
     
+    // *** Firebase func Data
+    // 1. find EveryThing
+    func saveData()
+    {
+        self.ref.child("Everthing").queryOrderedByKey().observe(.value){(snapshot) in
+            self.everyThingArray.removeAll()
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot]
+            {
+                for snap in snapshot
+                {
+                    if let mainDict = snap.value as? [String:AnyObject]
+                    {
+                        let name = mainDict["imgName"] as? String
+                        let profileImageURL = mainDict["img"] as? String ??  ""
+                       // self.arrData.append(celllModel(name: name, age: age, profileImageURL: profileImageURL))
+                        self.everyThingArray.append(findEveryThingModel(name: name, profileImageURL: profileImageURL))
+                        self.everyThingCollectionView.reloadData()
+                    }
+                }
+            }
+        }
+    }
     
-   
+    //2.find flight Func
+
+        func saveData2()
+        {
+            self.ref.child("Flight").queryOrderedByKey().observe(.value){(snapshot) in
+                self.hotelArray.removeAll()
+                if let snapshot = snapshot.children.allObjects as? [DataSnapshot]
+                {
+                    for snap in snapshot
+                    {
+                        if let mainDict = snap.value as? [String:AnyObject]
+                        {
+                            let profileImageURL = mainDict["hotelImgName"] as? String ??  ""
+                           // self.arrData.append(celllModel(name: name, age: age, profileImageURL: profileImageURL))
+                            self.hotelArray.append(hotelModel(profileImageURL: profileImageURL))
+                            self.hotelCollectionView.reloadData()
+                        }
+                    }
+                }
+            }
+        }
     
     
     
@@ -158,7 +212,7 @@ class HomeViewController: UIViewController {
     
     // ***  XIB REGISTER CELL **** -------------------
     func xibregisterCell()
-    {
+    {  //findEveryThingCollectionViewCell
         let nibCell1 = UINib(nibName: "findEveryThingCollectionViewCell", bundle: nil)
         everyThingCollectionView.register(nibCell1, forCellWithReuseIdentifier: "cell1")
         
@@ -332,25 +386,27 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == everyThingCollectionView
         {
-            return everyThingCollectionimage.count
+            return   everyThingArray.count   //everyThingCollectionimage.count
         }
         else
         {
-            return hotelCollectionViewimage.count
+            return hotelArray.count
         }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == everyThingCollectionView
         {
             let cell = everyThingCollectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath)  as! findEveryThingCollectionViewCell
-            cell.img.image = UIImage(named: everyThingCollectionimage[indexPath.item])
-            cell.lbl.text = everyThingcollectionImageName[indexPath.item]
+           // cell.img.image = UIImage(named: everyThingCollectionimage[indexPath.item])
+           // cell.lbl.text = everyThingcollectionImageName[indexPath.item]
+            cell.cellmodel = everyThingArray[indexPath.row]
             return cell
         }
         else if collectionView == hotelCollectionView
         {
             let cell = hotelCollectionView.dequeueReusableCell(withReuseIdentifier: "hotelCell", for: indexPath) as! hotelCollectionViewCell
-            cell.img.image = UIImage(named: hotelCollectionViewimage[indexPath.item])
+            //cell.img.image = UIImage(named: hotelCollectionViewimage[indexPath.item])
+            cell.hotelCellModel = hotelArray[indexPath.row]
             return cell
         }
         else

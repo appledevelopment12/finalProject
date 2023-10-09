@@ -14,15 +14,20 @@
 		5D481D992AD05D7F00872F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D481D982AD05D7F00872F95 /* Assets.xcassets */; };
 		5D481D9C2AD05D7F00872F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D481D9A2AD05D7F00872F95 /* LaunchScreen.storyboard */; };
 		5D481DA42AD097D900872F95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D481DA32AD097D900872F95 /* HomeViewController.swift */; };
-		5D7535982AD14B3D002BD01D /* findEveryThingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7535962AD14B3D002BD01D /* findEveryThingCollectionViewCell.swift */; };
-		5D7535992AD14B3D002BD01D /* findEveryThingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7535972AD14B3D002BD01D /* findEveryThingCollectionViewCell.xib */; };
+		5D5124512AD4689100F18AE0 /* flightFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5124502AD4689100F18AE0 /* flightFile.swift */; };
+		5D719A2C2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D719A2A2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.swift */; };
+		5D719A2D2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D719A2B2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.xib */; };
 		5D75359C2AD158FD002BD01D /* hotelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75359A2AD158FD002BD01D /* hotelCollectionViewCell.swift */; };
 		5D75359D2AD158FD002BD01D /* hotelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D75359B2AD158FD002BD01D /* hotelCollectionViewCell.xib */; };
 		5D7535A02AD1668A002BD01D /* flightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75359E2AD1668A002BD01D /* flightCollectionViewCell.swift */; };
 		5D7535A12AD1668A002BD01D /* flightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D75359F2AD1668A002BD01D /* flightCollectionViewCell.xib */; };
+		5D9A69F32AD461A000577D93 /* findEveryThingModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A69F22AD461A000577D93 /* findEveryThingModelFile.swift */; };
+		5D9A69F52AD4659A00577D93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D9A69F42AD4659A00577D93 /* GoogleService-Info.plist */; };
+		646ADB429CF40DAB026669F6 /* Pods_finalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29F968750C132B5EC2ECED /* Pods_finalProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C29F968750C132B5EC2ECED /* Pods_finalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D481D8C2AD05D7C00872F95 /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D481D8F2AD05D7C00872F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D481D912AD05D7C00872F95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,12 +37,17 @@
 		5D481D9B2AD05D7F00872F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D481D9D2AD05D7F00872F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D481DA32AD097D900872F95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5D7535962AD14B3D002BD01D /* findEveryThingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findEveryThingCollectionViewCell.swift; sourceTree = "<group>"; };
-		5D7535972AD14B3D002BD01D /* findEveryThingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = findEveryThingCollectionViewCell.xib; sourceTree = "<group>"; };
+		5D5124502AD4689100F18AE0 /* flightFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flightFile.swift; sourceTree = "<group>"; };
+		5D719A2A2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findEveryThingCollectionViewCell.swift; sourceTree = "<group>"; };
+		5D719A2B2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = findEveryThingCollectionViewCell.xib; sourceTree = "<group>"; };
 		5D75359A2AD158FD002BD01D /* hotelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hotelCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D75359B2AD158FD002BD01D /* hotelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hotelCollectionViewCell.xib; sourceTree = "<group>"; };
 		5D75359E2AD1668A002BD01D /* flightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flightCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D75359F2AD1668A002BD01D /* flightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = flightCollectionViewCell.xib; sourceTree = "<group>"; };
+		5D9A69F22AD461A000577D93 /* findEveryThingModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findEveryThingModelFile.swift; sourceTree = "<group>"; };
+		5D9A69F42AD4659A00577D93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96AB434EB5B8A139902E8BFF /* Pods-finalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finalProject.release.xcconfig"; path = "Target Support Files/Pods-finalProject/Pods-finalProject.release.xcconfig"; sourceTree = "<group>"; };
+		9B2DE1A253A5E8100760BF1B /* Pods-finalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finalProject.debug.xcconfig"; path = "Target Support Files/Pods-finalProject/Pods-finalProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646ADB429CF40DAB026669F6 /* Pods_finalProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +67,8 @@
 			children = (
 				5D481D8E2AD05D7C00872F95 /* finalProject */,
 				5D481D8D2AD05D7C00872F95 /* Products */,
+				FA9382E8088D1C8433A40C81 /* Pods */,
+				BBEEA820F5536098EB026297 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,22 +83,66 @@
 		5D481D8E2AD05D7C00872F95 /* finalProject */ = {
 			isa = PBXGroup;
 			children = (
+				5D9A69F82AD4678A00577D93 /* HotelFolder */,
+				5D9A69F72AD4677A00577D93 /* flightFolder */,
+				5D9A69F62AD4676900577D93 /* EveryThingFolder */,
 				5D481D8F2AD05D7C00872F95 /* AppDelegate.swift */,
 				5D481D912AD05D7C00872F95 /* SceneDelegate.swift */,
 				5D481D932AD05D7C00872F95 /* ViewController.swift */,
 				5D481D952AD05D7C00872F95 /* Main.storyboard */,
+				5D719A2A2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.swift */,
+				5D719A2B2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.xib */,
 				5D75359E2AD1668A002BD01D /* flightCollectionViewCell.swift */,
 				5D75359F2AD1668A002BD01D /* flightCollectionViewCell.xib */,
-				5D75359A2AD158FD002BD01D /* hotelCollectionViewCell.swift */,
-				5D75359B2AD158FD002BD01D /* hotelCollectionViewCell.xib */,
-				5D7535962AD14B3D002BD01D /* findEveryThingCollectionViewCell.swift */,
-				5D7535972AD14B3D002BD01D /* findEveryThingCollectionViewCell.xib */,
 				5D481DA32AD097D900872F95 /* HomeViewController.swift */,
 				5D481D982AD05D7F00872F95 /* Assets.xcassets */,
+				5D9A69F42AD4659A00577D93 /* GoogleService-Info.plist */,
 				5D481D9A2AD05D7F00872F95 /* LaunchScreen.storyboard */,
 				5D481D9D2AD05D7F00872F95 /* Info.plist */,
 			);
 			path = finalProject;
+			sourceTree = "<group>";
+		};
+		5D9A69F62AD4676900577D93 /* EveryThingFolder */ = {
+			isa = PBXGroup;
+			children = (
+				5D9A69F22AD461A000577D93 /* findEveryThingModelFile.swift */,
+			);
+			path = EveryThingFolder;
+			sourceTree = "<group>";
+		};
+		5D9A69F72AD4677A00577D93 /* flightFolder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = flightFolder;
+			sourceTree = "<group>";
+		};
+		5D9A69F82AD4678A00577D93 /* HotelFolder */ = {
+			isa = PBXGroup;
+			children = (
+				5D75359A2AD158FD002BD01D /* hotelCollectionViewCell.swift */,
+				5D75359B2AD158FD002BD01D /* hotelCollectionViewCell.xib */,
+				5D5124502AD4689100F18AE0 /* flightFile.swift */,
+			);
+			path = HotelFolder;
+			sourceTree = "<group>";
+		};
+		BBEEA820F5536098EB026297 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C29F968750C132B5EC2ECED /* Pods_finalProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA9382E8088D1C8433A40C81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DE1A253A5E8100760BF1B /* Pods-finalProject.debug.xcconfig */,
+				96AB434EB5B8A139902E8BFF /* Pods-finalProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D481DA02AD05D7F00872F95 /* Build configuration list for PBXNativeTarget "finalProject" */;
 			buildPhases = (
+				BB3C99EF1044A772881671C5 /* [CP] Check Pods Manifest.lock */,
 				5D481D882AD05D7C00872F95 /* Sources */,
 				5D481D892AD05D7C00872F95 /* Frameworks */,
 				5D481D8A2AD05D7C00872F95 /* Resources */,
+				8B9D3D20CD8D0DA76104A24C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,13 +208,56 @@
 				5D481D9C2AD05D7F00872F95 /* LaunchScreen.storyboard in Resources */,
 				5D75359D2AD158FD002BD01D /* hotelCollectionViewCell.xib in Resources */,
 				5D481D992AD05D7F00872F95 /* Assets.xcassets in Resources */,
-				5D7535992AD14B3D002BD01D /* findEveryThingCollectionViewCell.xib in Resources */,
 				5D7535A12AD1668A002BD01D /* flightCollectionViewCell.xib in Resources */,
 				5D481D972AD05D7C00872F95 /* Main.storyboard in Resources */,
+				5D719A2D2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.xib in Resources */,
+				5D9A69F52AD4659A00577D93 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B9D3D20CD8D0DA76104A24C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finalProject/Pods-finalProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finalProject/Pods-finalProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-finalProject/Pods-finalProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3C99EF1044A772881671C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-finalProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D481D882AD05D7C00872F95 /* Sources */ = {
@@ -163,12 +265,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D481D942AD05D7C00872F95 /* ViewController.swift in Sources */,
-				5D7535982AD14B3D002BD01D /* findEveryThingCollectionViewCell.swift in Sources */,
 				5D481D902AD05D7C00872F95 /* AppDelegate.swift in Sources */,
 				5D481D922AD05D7C00872F95 /* SceneDelegate.swift in Sources */,
 				5D481DA42AD097D900872F95 /* HomeViewController.swift in Sources */,
+				5D5124512AD4689100F18AE0 /* flightFile.swift in Sources */,
 				5D75359C2AD158FD002BD01D /* hotelCollectionViewCell.swift in Sources */,
+				5D719A2C2AD4756D00CDF5B7 /* findEveryThingCollectionViewCell.swift in Sources */,
 				5D7535A02AD1668A002BD01D /* flightCollectionViewCell.swift in Sources */,
+				5D9A69F32AD461A000577D93 /* findEveryThingModelFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +414,7 @@
 		};
 		5D481DA12AD05D7F00872F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2DE1A253A5E8100760BF1B /* Pods-finalProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +443,7 @@
 		};
 		5D481DA22AD05D7F00872F95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96AB434EB5B8A139902E8BFF /* Pods-finalProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
